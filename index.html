@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- HTML
+
+  HYPERTEX
+  text que contem links para outros documentos.
+
+  MARKUP 
+  texto contera marcações
+  <tags>
+
+  LANGUAGE    
+  Para me comunicar de certa maneira,Sintaxe específica
+  para escrita.
+  -->
+
+<html>
+
+<head>
+  <!--são configurações da minha página-->
+  <title>Doe sangue! Salve vidas! </title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+     <img 
+        class="logo"
+        src="logo.png" 
+        alt="Imagem de DOE">
+    <h2>A sua doação importa!</h2>
+    <p>Até 3 vidas para 1 doações</p>
+    <p>Mais de 38.000 doações são necessárias todos os dias</p>
+    <p>Apenas 1,9% da população brasileira,doa sangue.</p>
+
+    <button>Quero ajudar!!</button>
+
+  </header>
+
+  <section class="form hide">
+    <h2>Entre na lista de doadores</h2>
+      <form action="/">
+         <input
+          type="text"
+          name="name"
+          placeholder="Nome Completo"
+         >
+         <input 
+         type="text"
+         name="email"
+         placeholder="Email"
+        >
+         <input 
+         type="text"
+         name="blood"
+         placeholder="Tipo sanguíneo"
+         >
+
+         <button>Enviar</button>
+      </form>
+  </section>
+
+   <main>
+
+    <h2>Últimos<span> doadores</span></h2>
+
+    <section class="donors" > 
+      <div class= "donor">
+        <div class= "blood">AB+</div>
+        <p>Fanny Lascuran</p>
+      </div>
+
+   
+        <div class= "donor">
+          <div class= "blood">B+</div>
+          <p>Carina de Sousa</p>
+        </div>
+
+      
+          <div class= "donor">
+            <div class= "blood">A+</div>
+            <p>Estela Fernandes</p>
+          </div>
+
+        
+            <div class= "donor">
+              <div class= "blood">O+</div>
+              <p>Fatima Lima</p>
+            </div>
+    </section>
+
+   </main>
+
+    <footer> Com 💖 Laylinha. </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
