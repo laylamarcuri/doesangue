@@ -19,7 +19,7 @@
   <!--são configurações da minha página-->
   <title>Doe sangue! Salve vidas! </title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
@@ -27,7 +27,7 @@
   <header>
      <img 
         class="logo"
-        src="logo.png" 
+        src="/logo.png" 
         alt="Imagem de DOE">
     <h2>A sua doação importa!</h2>
     <p>Até 3 vidas para 1 doações</p>
@@ -40,18 +40,18 @@
 
   <section class="form hide">
     <h2>Entre na lista de doadores</h2>
-      <form action="/">
-         <input
+      <form action="/" method="POST">
+         <input required
           type="text"
           name="name"
           placeholder="Nome Completo"
          >
-         <input 
-         type="text"
+         <input required
+         type="email"
          name="email"
          placeholder="Email"
         >
-         <input 
+         <input required
          type="text"
          name="blood"
          placeholder="Tipo sanguíneo"
@@ -66,36 +66,23 @@
     <h2>Últimos<span> doadores</span></h2>
 
     <section class="donors" > 
+
+        {% for donor in donors %}
+
       <div class= "donor">
-        <div class= "blood">AB+</div>
-        <p>Fanny Lascuran</p>
+        <div class= "blood">{{donor.blood}}</div>
+        <p>{{donor.name}}</p>
       </div>
 
-   
-        <div class= "donor">
-          <div class= "blood">B+</div>
-          <p>Carina de Sousa</p>
-        </div>
-
-      
-          <div class= "donor">
-            <div class= "blood">A+</div>
-            <p>Estela Fernandes</p>
-          </div>
-
-        
-            <div class= "donor">
-              <div class= "blood">O+</div>
-              <p>Fatima Lima</p>
-            </div>
+        {%endfor%}
     </section>
 
    </main>
 
     <footer> Com 💖 Laylinha. </footer>
 
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
 
 </body>
 
-</html>
+</html> 
