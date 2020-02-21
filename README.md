@@ -4,8 +4,8 @@
 #### Formulário que recebe o cadastro de um doador e informa os últimos doadores na tela.
 
 ### :rocket: MaratonaDev - Rockeseat
-![](./public/maratonadev.png)
-Realizado entre o dia 17/02/2020 até 19/02/2020
+![](./public/maratonadev.png) <br/>
+Realizado entre o dia 17/02/2020 até 19/02/2020<br/>
 Instrutor: Mayk Brito
 
 ### Tecnologias utilizados no projeto
@@ -24,5 +24,5 @@ Instrutor: Mayk Brito
 * [PostgreSQL](https://www.postgresql.org/)
 
 ### :girl: Laylinha
-Ajustes do README, feito pelo meu pai!
+Ajustes do README, feito pelo meu pai!<br/>
 Primeiro projeto "html, css e javascript" da minha vida, tenho 13 anos na data desse projeto.
